@@ -1,7 +1,8 @@
 import { useState } from "react";
 
+
 export const AddCategory = ({ onNewCategory }) => {
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState("" );
 
   const onInputChange = (event) => {
     setInputValue(event.target.value);
@@ -18,12 +19,9 @@ export const AddCategory = ({ onNewCategory }) => {
 
   return (
     <form onSubmit={onSubmit}>
-      <input
-        type="text"
-        placeholder="Buscar gifs"
-        value={inputValue}
-        onChange={onInputChange}
-      />
+      <input className=" w-full text-white  rounded-lg p-3 border border-slate-900 focus:outline-none bg-slate-800 focus:border-sky-600 text-xl placeholder:text-xl" type="text" placeholder="Buscar Gif..." value={inputValue} onChange={onInputChange}/>
     </form>
   );
 };
+
+

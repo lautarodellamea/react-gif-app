@@ -1,4 +1,9 @@
-* {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* * {
   font-family: Helvetica, Arial, sans-serif;
   background-color: rgb(234, 234, 234);
 }
@@ -61,4 +66,4 @@ h3 {
 
 .card img {
   width: 100%;
-}
+} */
