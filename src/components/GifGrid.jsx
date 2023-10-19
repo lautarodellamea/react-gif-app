@@ -1,4 +1,7 @@
 import { GifItem } from "./GifItem";
+
+import { PropTypes } from "prop-types";
+
 import { useFetchGifs } from "../hooks/useFetchGifs";
 
 export const GifGrid = ({ category }) => {
@@ -6,10 +9,10 @@ export const GifGrid = ({ category }) => {
 
   return (
     <div className="mb-10 mt-10">
-      
-      <h3 className="bg-sky-500 p-2 rounded-lg inline-block text-2xl mb-3  capitalize text-white">{category}</h3>
+      <h3 className="bg-sky-500 p-2 rounded-lg inline-block text-2xl mb-3  capitalize text-white">
+        {category}
+      </h3>
 
-      
       {isLoading && <h2 className="text-white">Cargando...</h2>}
 
       {/* otra alternativa, esto hace la lógica interna si mostrarse o no */}
@@ -22,4 +25,8 @@ export const GifGrid = ({ category }) => {
       </div>
     </div>
   );
+};
+
+GifGrid.propTypes = {
+  category: PropTypes.string.isRequired,
 };
