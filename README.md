@@ -44,6 +44,3 @@ npm install
 ```bash
 npm run dev
 ```
-
-## Autor
-[Lautaro Della Mea](https://lautarodellamea.netlify.app/)
